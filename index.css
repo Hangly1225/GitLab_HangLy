@@ -1,11 +1,28 @@
+@keyframes heartmove
+{
+    50%{
+        transform: translate(-50%,-100%) scale(3,3);
+    }
+
+    100%{
+        transform: translate(-50%,-50%) scale(1,1);
+    }
+}
+
+body{
+    text-align: center;
+}
 .heart{
     width: 200px;
     height: 200px;
-    top: 50%;
+    top: 60%;
     left: 50%;
     display: block;
     position: absolute;
     transform: translate(-50%,-50%);
+    animation-name: heartmove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 .heart div{
@@ -20,8 +37,31 @@
 
 .left{
     left: 45px;
+    rotate: 330deg;
 }
  
 .right{
     right: 45px;
+    rotate: 30deg;
+
+}
+
+.img{
+    width: 700px;
+    height: 700px;
+    background-size: cover;
+    display: inline-block;
+}
+
+#leftImg{
+    right: 500px;
+    background-image: url(./Duc.JPG);
+}
+
+#rightImg{
+    background-image: url(./Ly.JPG);
+}
+.border{
+    display: inline-block;
+    margin-left: 30px;
 }
