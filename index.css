@@ -1,0 +1,27 @@
+.heart{
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.heart div{
+    background:red;
+    width: 71px;
+    height: 126px;
+    top: 40%;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.left{
+    left: 45px;
+}
+ 
+.right{
+    right: 45px;
+}
